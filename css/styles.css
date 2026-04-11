@@ -530,3 +530,81 @@ padding: 32px 16px;}
   
 }
 
+/* modal window */
+
+.modal_form{
+    background-color: chocolate;
+    border-radius: 4px;
+        max-width: 408px;
+      
+}
+
+
+
+.modal_form_tittle{
+    font-weight: 500;
+        font-size: 16px;
+    
+        line-height: 24px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        margin-top: 24px;
+        margin-bottom: 16px;
+}
+.modan_form_text{
+    font-weight: 400;
+        font-size: 12px;
+    
+        line-height: 14px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+}
+
+
+.modal_form_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    
+}
+.cross{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ width: 24px;
+    height: 24px;
+    border-radius: 100%;
+        background-color: #e7e9fc;
+        stroke-width: 1px;
+        stroke: rgba(0, 0, 0, 0.1);
+        
+        
+        
+}
+.svg_cross{
+fill: #2e2f42;
+
+
+}
+.svg_input:hover,
+.svg_input:focus{
+    fill: #4d5ae5;
+}
+.modal_input{
+border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+width: 360px;
+}
+.modal_input:hover,
+.modal_inpur:focus{
+    border: 1px solid #4d5ae5;
+     
+
+}
+

@@ -525,5 +525,77 @@
         </div>
       </div>
     </footer>
+
+    <!-- region modal window -->
+    <form class="modal_form">
+      <div class="cross">
+        <svg class="svg_cross" width="8" height="8">
+          <use href="./images/symbol-defs.svg#icon-cross"></use>
+        </svg>
+      </div>
+      <h3 class="modal_form_tittle">
+        Leave your contacts and we will call you back
+      </h3>
+      <ul class="modal_form_list">
+        <li>
+          <label
+            ><p class="modal_form_text">Name</p>
+
+            <svg class="svg_input" width="12" height="12">
+              <use href="./images/symbol-defs.svg#icon-name"></use>
+            </svg>
+
+            <input class="modal_input" type="text" name="user_name" autofocus />
+          </label>
+        </li>
+        <li>
+          <label>
+            <p class="modal_form_text">Phone</p>
+
+            <svg class="svg_input" width="12" height="12">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            <input class="modal_input" type="tel" name="user_phone" />
+          </label>
+        </li>
+        <li>
+          <label>
+            <p class="modal_form_text">Email</p>
+
+            <svg class="svg_input" width="12" height="12">
+              <use href="./images/symbol-defs.svg#icon-mail"></use>
+            </svg>
+            <input class="modal_input" type="email" name="user_mail" />
+          </label>
+        </li>
+
+        <li>
+          <label>
+            <p class="modal_form_text">Comment</p>
+            <textarea
+              class="modal_input"
+              name="comment"
+              rows="5"
+              placeholder="Text input"
+            >
+            </textarea>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input
+              class="modal_input"
+              type="checkbox"
+              name="privacy"
+              value="Policy"
+              required
+            />
+            I accept the terms and conditions of the
+            <span class="privacy_text">Privacy Policy</span>
+          </label>
+        </li>
+      </ul>
+      <button type="submit">Send</button>
+    </form>
   </body>
 </html>
