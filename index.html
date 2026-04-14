@@ -527,75 +527,85 @@
     </footer>
 
     <!-- region modal window -->
-    <form class="modal_form">
-      <div class="cross">
-        <svg class="svg_cross" width="8" height="8">
-          <use href="./images/symbol-defs.svg#icon-cross"></use>
-        </svg>
-      </div>
-      <h3 class="modal_form_tittle">
-        Leave your contacts and we will call you back
-      </h3>
-      <ul class="modal_form_list">
-        <li>
-          <label
-            ><p class="modal_form_text">Name</p>
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button type="button" class="cross">
+          <svg class="svg_cross" width="8" height="8">
+            <use href="./images/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <p class="form_tittle">Leave your contacts and we will call you back</p>
+        <form class="form_content">
+          <div class="input_wrap">
+            <label for="user_name" class="form_label">Name</label>
+            <div class="input_content">
+              <input
+                class="modal_input"
+                type="text"
+                name="user_name"
+                autofocus
+              />
+              <svg class="svg_input" width="18" height="24">
+                <use href="./images/symbol-defs.svg#icon-name"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input_wrap">
+            <label for="user_phone" class="form_label">Phone</label>
+            <div class="input_content">
+              <input class="modal_input" type="tel" name="user_phone" />
+              <svg class="svg_input" width="18" height="24">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
 
-            <svg class="svg_input" width="12" height="12">
-              <use href="./images/symbol-defs.svg#icon-name"></use>
-            </svg>
+          <div class="input_wrap">
+            <label for="user_mail" class="form_label">Email</label>
+            <div class="input_content">
+              <input class="modal_input" type="email" name="user_mail" />
+              <svg class="svg_input" width="18" height="24">
+                <use href="./images/symbol-defs.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input_comment">
+            <label for="comment" class="form_label">Comment</label>
 
-            <input class="modal_input" type="text" name="user_name" autofocus />
-          </label>
-        </li>
-        <li>
-          <label>
-            <p class="modal_form_text">Phone</p>
-
-            <svg class="svg_input" width="12" height="12">
-              <use href="./images/symbol-defs.svg#icon-phone"></use>
-            </svg>
-            <input class="modal_input" type="tel" name="user_phone" />
-          </label>
-        </li>
-        <li>
-          <label>
-            <p class="modal_form_text">Email</p>
-
-            <svg class="svg_input" width="12" height="12">
-              <use href="./images/symbol-defs.svg#icon-mail"></use>
-            </svg>
-            <input class="modal_input" type="email" name="user_mail" />
-          </label>
-        </li>
-
-        <li>
-          <label>
-            <p class="modal_form_text">Comment</p>
             <textarea
-              class="modal_input"
+              id="comment"
+              class="textarea"
               name="comment"
               rows="5"
               placeholder="Text input"
             >
             </textarea>
-          </label>
-        </li>
-        <li>
-          <label>
+          </div>
+          <div class="input_chekbox">
             <input
-              class="modal_input"
+              class="modal_input visually-hidden"
               type="checkbox"
               name="privacy"
-              value="Policy"
+              value="true"
               required
             />
-            I accept the terms and conditions of the
-            <span class="privacy_text">Privacy Policy</span>
-          </label>
-        </li>
-      </ul>
-      <button type="submit">Send</button>
-    </form>
+            <label class="privacy_text">
+              <!-- <span class="custom_chekbox">
+                <svg>
+                  <use></use>
+                </svg>
+              </span> -->
+
+              I accept the terms and conditions of the
+              <a class="privacy_link" href="Privacy Policy">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button type="button" class="modal_button" type="submit">
+            <span class="modal_button_text">Send</span>
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
