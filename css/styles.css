@@ -532,6 +532,70 @@ padding: 32px 16px;}
     ;
   
 }
+.footer_form_text{
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+}
+
+.footer_form{
+    
+            display: flex;
+            align-items: flex-end;
+            gap: 24px;
+        }
+
+
+.footer_input{
+    border: 1px solid #fff;
+        border-radius: 4px;
+        width: 264px;
+        height: 40px;
+        background-color: transparent;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        padding: 8px 16px;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer_input:hover{
+    border: 1px solid#31d0aa;
+}
+.footer_subscribe{
+    margin-left: auto;
+}
+
+.footer_subscribe_button{
+display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 169px;
+    height: 40px;
+    border: none;
+    background: #4d5ae5;
+    color: #ffffff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+.footer_subscribe_button:hover{
+background: #31d0aa;
+}
+
+.footer_subscribe_svg{
+    fill: #fff;
+}
+
+.footer_email{
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* modal window */
 .backdrop {
@@ -551,7 +615,7 @@ padding: 32px 16px;}
 .backdrop.is-open {
     opacity: 1;
     visibility: visible;
-    /* /* pointer-events: none; */
+pointer-events: none;
 }
 
 .modal {
@@ -590,9 +654,16 @@ padding: 32px 16px;}
                 top: 24px;
                 right: 24px;
 }
+.cross:hover{
+    background-color: #404bbf;
+}
 
 .svg_cross{
    fill: #2e2f42;
+}
+
+.svg_cross:hover{
+    fill: #fff;
 }
 
 .form_tittle{
@@ -697,6 +768,8 @@ display: block;
 
 .input_chekbox{
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
 }
 
 .visually-hidden{
@@ -726,4 +799,23 @@ display: block;
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: #4d5ae5;
+      
 }
+
+.custom_chekbox{
+width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+        .v_svg{
+            fill: transparent;
+                transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
