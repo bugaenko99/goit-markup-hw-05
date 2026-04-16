@@ -524,21 +524,22 @@
           </div>
           <form class="footer_form">
             <div class="footer_email">
-              <label class="footer_form_text" for="Subscribe">Subscribe </label>
+              <label class="footer_form_text" for="Subscribe">Subscribe 
 
               <input
+                id="Subscribe"
                 class="footer_input"
                 type="email"
                 name="user_mail"
-                placeholder="Email"
+                placeholder="E-mail"
               />
             </div>
-
+</label>
             <div class="footer_subscribe">
-              <button type="button" class="footer_subscribe_button">
+              <button type="submit" class="footer_subscribe_button">
                 Subscribe
-                <svg class="footer_subscribe_svg" width="24" height="20">
-                  <use href="./images/plane.svg#icon-icon-send"></use>
+                <svg class="footer_subscribe_svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
             </div>
@@ -548,11 +549,11 @@
     </footer>
 
     <!-- region modal window -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="cross">
           <svg class="svg_cross" width="8" height="8">
-            <use href="./images/symbol-defs.svg#icon-cross"></use>
+            <use href="./images/icons.svg#icon-cross"></use>
           </svg>
         </button>
         <p class="form_tittle">Leave your contacts and we will call you back</p>
@@ -561,22 +562,23 @@
             <label for="user_name" class="form_label">Name</label>
             <div class="input_content">
               <input
+              id="user_name"
                 class="modal_input"
                 type="text"
                 name="user_name"
                 autofocus
               />
               <svg class="svg_input" width="18" height="24">
-                <use href="./images/symbol-defs.svg#icon-name"></use>
+                <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </div>
           </div>
           <div class="input_wrap">
             <label for="user_phone" class="form_label">Phone</label>
             <div class="input_content">
-              <input class="modal_input" type="tel" name="user_phone" />
+              <input id="user_phone" class="modal_input" type="tel" name="user_phone" />
               <svg class="svg_input" width="18" height="24">
-                <use href="./images/symbol-defs.svg#icon-phone"></use>
+                <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
@@ -584,9 +586,9 @@
           <div class="input_wrap">
             <label for="user_mail" class="form_label">Email</label>
             <div class="input_content">
-              <input class="modal_input" type="email" name="user_mail" />
+              <input id="user_mail" class="modal_input" type="email" name="user_mail" />
               <svg class="svg_input" width="18" height="24">
-                <use href="./images/symbol-defs.svg#icon-mail"></use>
+                <use href="./images/icons.svg#icon-mail"></use>
               </svg>
             </div>
           </div>
@@ -602,18 +604,21 @@
             >
             </textarea>
           </div>
-          <div class="input_chekbox">
-            <input
-              class="modal_input visually-hidden"
-              type="checkbox"
-              name="privacy"
-              value="true"
-              required
-            />
+       <label for="chekbox">
+            <div class="input_chekbox">
+              <input
+              id="checkbox"
+                class="modal_input visually-hidden"
+                type="checkbox"
+                name="privacy"
+                value="true"
+                required
+              />
+       </label>
             <label class="privacy_text">
               <span class="custom_chekbox">
-                <svg class="v_svg" width="10" hidden="8">
-                  <use href="./images/V.svg"></use>
+                <svg class="v_svg" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
 
@@ -622,7 +627,7 @@
             </label>
           </div>
 
-          <button type="button" class="modal_button" type="submit">
+          <button class="modal_button" type="submit">
             <span class="modal_button_text">Send</span>
           </button>
         </form>
