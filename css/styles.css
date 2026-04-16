@@ -178,8 +178,8 @@ padding-top: 188px;
    
                
 }
-.button,
-.modal_button {
+.button
+{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -551,6 +551,12 @@ color: #fff;
             display: flex;
             align-items: flex-end;
             gap: 24px;
+    
+        }
+
+        .footer_mail_form{
+            display: flex;
+            flex-direction: column;
             margin-left: auto;
         }
 
@@ -576,6 +582,7 @@ color: #fff;
 }
 
 
+
 .footer_subscribe_button{
 display: flex;
     align-items: center;
@@ -590,7 +597,8 @@ display: flex;
     color: #ffffff;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
-.footer_subscribe_button:hover{
+.footer_subscribe_button:hover,
+.footer_subscribe_button:focus{
 background: #31d0aa;
 }
 
@@ -661,8 +669,11 @@ background: #31d0aa;
                 position: absolute;
                 top: 24px;
                 right: 24px;
+                transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.cross:hover{
+.cross:hover,
+.cross:focus
+{
     background-color: #404bbf;
 }
 
@@ -783,11 +794,6 @@ display: block;
         border: 1px solid #4d5ae5;
 }
 
-.input_chekbox{
-    margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-}
 
 .visually-hidden{
     position: absolute;
@@ -811,7 +817,7 @@ display: block;
       
 }
 
-.custom_chekbox{
+.custom_checkbox{
 width: 16px;
     height: 16px;
     margin-right: 8px;
@@ -822,17 +828,39 @@ width: 16px;
     justify-content: center;
     background-color: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+        }
 
         .v_svg{
             fill: transparent;
                 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-                          .span.custom_chekbox{
-                              background-color: #404bbf;
-                          }
-            
+
                           .modal_input:checked ~ .custom_checkbox .v_svg{
                               fill: #f4f4fd;
                           }
+
+  .modal_button{
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #fff;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        background: #4d5ae5;
+        cursor: pointer;
+        display: block;
+        min-width: 169px;
+        margin-top: 24px;
+        margin-left: auto;
+        margin-bottom: 24px;
+        margin-right: auto;
+        padding: 16px 32px 16px 32px;
+        border: none;
+        border-radius: 4px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
