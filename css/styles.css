@@ -564,7 +564,7 @@ color: #fff;
         .footer_mail_form{
             display: flex;
             flex-direction: column;
-            margin-left: 80px;
+            margin-left: auto;
         }
 
 
@@ -686,6 +686,7 @@ background: #31d0aa;
 
 .svg_cross{
    fill: #2e2f42;
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cross:hover .svg_cross,
