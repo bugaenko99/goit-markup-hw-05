@@ -552,7 +552,7 @@
     </footer>
 
     <!-- region modal window -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="cross">
           <svg class="svg_cross" width="8" height="8">
@@ -617,7 +617,7 @@
             >
             </textarea>
           </div>
-          <label>
+          <label class="checkbox_label">
             <input
               id="privacy_text"
               class="modal_input visually-hidden"
@@ -633,8 +633,10 @@
               </svg>
             </span>
 
-            I accept the terms and conditions of the
-            <a class="privacy_link" href="Privacy-Policy">Privacy Policy</a>
+            <span class="checkbox_text">
+              I accept the terms and conditions of the
+              <a class="privacy_link" href="Privacy-Policy">Privacy Policy</a>
+            </span>
           </label>
           <button class="modal_button" type="submit">
             <span class="modal_button_text">Send</span>
